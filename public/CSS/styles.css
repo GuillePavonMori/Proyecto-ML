@@ -151,7 +151,7 @@ header {
         background-color: white;
         }
     article:hover .descripciones{
-        display: block;
+        visibility: visible;
         
     }    
     article:hover{
@@ -182,7 +182,7 @@ header {
             text-align: left;
         }
         .descripciones{
-            display: none;
+            visibility: hidden; /*/////y luego:visible*/
             /*justify-content: flex-start;*/
             font-size: 16px;
         }
@@ -235,7 +235,7 @@ header {
             right: 20px ;
             top: -30px ;
         } 
-        main section article i:hover{
+        main section article:hover i{
             transform: rotate(-90deg);
         }
 
