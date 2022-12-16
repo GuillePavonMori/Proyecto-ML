@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyecto</title>
+        
+        
+        <!--Roboto-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+        <!-- chequear el orden de este link (copiado de una googlefonts) xq el href esta primero-->
+        
+        
+
+        <!--Estilos-->
+        <link rel="stylesheet" href="/public/CSS/normalize.css">
+        <!-- chequear este normalize si esta bien linkeado y si en CSS tengo q poner algo-->
+        <!--Fontawesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="/CSS/register.css">
+        <!-- esta puede ser otra manera aunq hay q cheuqearla <link rel="stylesheet" href="/public/CSS/Roboto/">-->
+    </head>
+    <body>
+        <header>
+            <h3>Registrate</h3>
+        </header>
+
+        <main>
+            <form action="" method="post">
+                <div>
+                    <label for="nombre">Nombre y apellido</label>
+                    <input type="text" name="nombre-y-apellido" id="nombre">
+                </div>
+
+                <div>
+                    <label for="usuario">Nombre de usuario</label>
+                    <input type="text" name="usuario" id="usuario">
+                </div>
+
+                <div>
+                    <label for="fecha"><h3>Fecha de nacimiento</h3></label>
+                    <input type="date" name="fecha" min="2004-12-15">
+                </div>
+                
+                <div>
+                    <label for="domicilio">Domicilio</label>
+                    <input type="text" name="domicilio" id="domicilio">
+                </div>   
+
+                <div>
+                    <label for="perfil"><h3>Perfil del usuario</h3></label>
+                    <input type="radio" name="perfil-usuario" value="Comprar">Comprar
+                    <input type="radio" name="perfil-usuario" value="Vender">Vender
+                </div>   
+                <div>
+                    <label for="interes"><h3>Categorías de interés</h3></label>
+                        <p><input type="checkbox" name="categoria" value="Electro">Electro</p> 
+                        <p><input type="checkbox" name="categoria" value="Moda">Moda</p> 
+                        <p><input type="checkbox" name="categoria" value="Hogar">Hogar</p> 
+                        <p><input type="checkbox" name="categoria" value="Juguetería">Juguetería</p> 
+                        <p><input type="checkbox" name="categoria" value="Vida sana">Vida sana</p> 
+                </div>
+
+                <div>
+                    <label for="img-perfil"><h3>Elige tu imagen de perfil</h3></label>
+                    <p><input type="file" name="avatar" accept=".jpg" multiple></p>
+                </div>
+                <div>
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" name="contraseña">
+                </div>
+                <div>
+                    <label for="confirmar-contraseña">Confirmar contraseña</label>
+                    <input type="password" name="confirmar-contraseña">
+                </div>
+
+                <div>
+                <button type="submit">Enviar</button>
+                <button type="reset">Cancelar</button>
+                </div>
+
+            </form>
+        </main>
+    </body>
+
+
+</html>
