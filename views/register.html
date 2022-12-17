@@ -25,7 +25,11 @@
     </head>
     <body>
         <header>
-            <h3>Registrate</h3>
+            
+                <img class="logo" src="images/logo-mercado-liebre.svg" alt="LogoML">
+                <!--si no estas logeado a font awesome hay q copiar script linea 157-->
+            
+            <h1 class="register">Registro</h1>
         </header>
 
         <main>
@@ -69,7 +73,7 @@
                     <p><input type="file" name="avatar" accept=".jpg" multiple></p>
                 </div>
                 <div>
-                    <label for="contraseña">Contraseña</label>
+                    <label for="contraseña">Elige tu contraseña</label>
                     <input type="password" name="contraseña">
                 </div>
                 <div>
@@ -78,12 +82,27 @@
                 </div>
 
                 <div>
-                <button type="submit">Enviar</button>
-                <button type="reset">Cancelar</button>
+                <button class="enviar-home" type="submit"><a href="home">Enviar</a></button>
+                <button type="reset">Borrar todo</button>
                 </div>
-
+                
             </form>
         </main>
+
+
+        <footer>
+
+            <div class="copyright">
+                <p>
+                    Copyright © 1999-2020 MercadoLiebre S.R.L.
+                </p>
+            </div>
+
+            
+        </footer>
+
+        <script src="https://kit.fontawesome.com/6cd48854d2.js" crossorigin="anonymous"></script>
+
     </body>
 
 
