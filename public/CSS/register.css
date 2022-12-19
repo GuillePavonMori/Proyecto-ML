@@ -34,30 +34,102 @@ header{
 .register{
     font-size: 3vmin;
 }
-h3{
-    width: 30%;
-}
 
-main {
+
+/**********MAIN**********/
+.main-upper{
+    width: 95%;
+    margin: 2px 10px;
+    padding: 5px;
+}
+h1{
+    margin: 0;
+}
+.main-bottom {
     display: flex;
     width: 95%;
     background-color: var(--light-gray);
     text-align: left;
-    margin: 10px 10px;
+    margin: 1px 10px 10px 10px;
     padding: 5px;
     border: solid 2px #666;
+    font-size: 20%;
 }
+
 main div{
     font-weight: bold;
-    padding: 2px;
+    padding: 2px 0;
+    margin: 2px;
 }
+
 main input {
     font-family: inherit;
+    margin: 1px;
 }
+.radio{
+    max-width: 7px;
+    padding: O;
+}
+h3{
+    margin: 5px 5px 5px 0px;
+}
+
+.fecha{
+    display: flex;
+    align-items: center;
+}
+
+.enviar-home{
+    background-color: rgb(4, 4, 184) ;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
 .enviar-home a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
+
+
+/*******FOOTER********/
 footer{
     margin: 10px;
 }
+
+
+
+
+/*******MEDIA QUERIES**********/
+
+
+/*********TABLETS*************/
+
+@media(min-width: 424px){
+
+
+
+.radio{
+    max-width: 9px;
+    padding: O;
+}
+}
+
+
+
+/*********LAPTOPS************/
+
+@media(min-width: 767px){
+    *{
+        font-size: 1.2vw;
+      }
+
+
+      
+    .radio{
+        max-width: 15px;
+        padding: O;
+    }
+
+    }

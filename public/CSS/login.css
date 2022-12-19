@@ -132,32 +132,67 @@ header {
     }
 
     main form{
-        width: 80%;
-        
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
 
+    main div{
+        width: 100%;
+        display: flex;
+    }
+    main label{
+        width: 30%;
+        flex-direction: column;
+        align-items: center;
+        margin: 5px;
+        padding: 5px;
+        text-align: right;
+    }
+
+    main input{
+        width: 70%;
+        max-width: 200px;
+        margin: 5px;
+        padding: 2px;
     }
     
-    main input{
-        width: 80%;
+    .button{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+
    .enviar-home{
      background-color: var(--light-gray);
      color: black;
      text-decoration:none ;
-     margin: 2px;
-     padding: 1px 0;
-     border-radius: 5px;
+     font-size: 14px;
+     margin: 10px;
+     padding: 5px 10px;
+     border-radius: 7px;
     }
     main a{
         text-decoration: none;
         color: black;
-    }
-   
-    .enviar-home:hover{
-        
-        color: #0022AA;
+        text-decoration:none ;
+        font-size: 12px;
     }
 
+    .enviar-home:hover{
+    /*como cambio color texto??*/
+    background-color: #0022AA;
+    color: white;
+    
+    
+    }
+
+    .enviar-home:hover a{
+      
+        color: white;
+        font-size: 12px;
+    
+        }
 /************FOOTER***********/
 
     footer{
@@ -226,6 +261,7 @@ header {
         width: 100%;
         min-width: auto;
         padding: 5px 1px 1px 5px;
+        padding-left: 15%;
         margin: 0;
         align-items: center;
     }
@@ -287,6 +323,32 @@ header {
         width: 50%;
     }
 
+    main form{
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    main div{
+        width: 100%;
+        display: flex;
+    }
+    main label{
+        width: 30%;
+        flex-direction: column;
+        align-items: center;
+        margin: 5px;
+        padding: 5px;
+        text-align: right;
+    }
+
+    main input{
+        width: 70%;
+        max-width: 300px;
+        margin: 5px;
+        padding: 2px;
+    }
 }
 
 /*********LAPTOPS/////////////*/
@@ -317,6 +379,7 @@ header {
     
     .logo {
         max-width: 80%;
+        padding-left: 5%;
     }
 
     
@@ -342,6 +405,33 @@ header {
     article.fa-truck-fast {
         width: 50px ;
         height: 60px ;            
+    }
+
+    main form{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    main div{
+        width: 100%;
+        display: flex;
+    }
+    main label{
+        width: 40%;
+        flex-direction: column;
+        align-items: center;
+        margin: 5px;
+        padding: 5px;
+        text-align: right;
+    }
+
+    main input{
+        width: 70%;
+        max-width: 400px;
+        margin: 5px;
+        padding: 2px;
     }
 
 }

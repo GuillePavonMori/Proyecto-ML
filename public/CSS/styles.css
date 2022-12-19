@@ -141,6 +141,7 @@ header {
         border: solid 3px var(--light-gray);
         padding: 5px;
         background-color: white;
+        transition: all 500ms;
         }
     article:hover .descripciones{
         visibility: visible;
@@ -193,6 +194,7 @@ header {
         }
 
         
+        
        main section article i{
             display: block ;
             font-size: 16px ;
@@ -206,9 +208,10 @@ header {
             position: absolute ;
             right: 20px ;
             top: -30px ;
+            transition: all 950ms;
         } 
-        main section article:hover i{
-            transform: rotate(-90deg);
+       main section article:hover i{
+           transform: rotate(-90deg);
         }
 
 
@@ -224,27 +227,24 @@ header {
         margin-bottom: 10px;
         color: var(--light-blue);  
     }
-    footer div:hover i{
-        transform-style: var(--green);
+    footer section div:hover i{
+        color:#39b54a;
     }
 
 
     .tarjeta{
         font-size: 2em;
         margin-bottom: 10px;
-        color: #666;
     }
   
     .envio{
         font-size: 2em;
         margin-bottom: 10px;
-        color: #666;
     }
 
     .seguridad{
         font-size: 2em;
         margin-bottom: 10px;
-        color: #666;
     }
     .copyright{
         font-size: 2em;
@@ -388,7 +388,7 @@ header {
 
 
 
-    @media(min-width: 767px){
+@media(min-width: 767px){
 
 
         /******HEADER*******/
@@ -443,7 +443,7 @@ header {
         /**********FOOTER****************/
 
 
-        footer {
+        footer section{
             display: flex;
             flex-wrap: wrap;
         }
@@ -455,7 +455,7 @@ header {
             font-size: 15px;
         }
 
-    }
+}
 
 
 
